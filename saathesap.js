@@ -1,4 +1,4 @@
-// Saat Hesaplayıcı - Klanlar.org için JavaScript kodu
+// Saat Hesaplayıcı - Klanlar.org için JavaScript kodu (19 dakika 40 saniyeden başlayarak)
 (function() {
     'use strict';
 
@@ -64,9 +64,9 @@
         let currentTime = new Date();
         currentTime.setHours(hours, minutes, seconds, milliseconds);
 
-        // 9 dakika 40 saniyeden başlayıp 20 saniyeye kadar aralıklarla azaltmalar
+        // 19 dakika 40 saniyeden başlayıp 20 saniyeye kadar aralıklarla azaltmalar
         const intervals = [];
-        for (let i = 580; i >= 20; i -= 20) { // 580 saniye = 9 dakika 40 saniye
+        for (let i = 1180; i >= 20; i -= 20) { // 1180 saniye = 19 dakika 40 saniye
             let mins = Math.floor(i / 60);
             let secs = i % 60;
             intervals.push({ minutes: mins, seconds: secs });
